@@ -19,7 +19,7 @@ namespace BookRest.Managers
             return new List<Book>(Books);
         }
 
-        public Book GetById(string ISBN)
+        public Book GetByIsbn(string ISBN)
         {
             return Books.Find(book => book.ISBN13 == ISBN);
         }
